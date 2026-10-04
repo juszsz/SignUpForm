@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+main {
+    display: flex;
+    height: 100vh;
+}
+
+.imageSideLogo {
+    background-image: url("images/halie.jpg");
+    background-size: cover;
+    color: ivory;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.logoAndNameCon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.55);
+    margin-top: 32%;
+}
+
+.logo {
+    height: 125px;
+    width: auto;
+}
+
+.logoName {
+    font-size: 5rem;
+    letter-spacing: 2px;
+}
+
+.credits {
+    background-color: rgba(0, 0, 0, 0.243);
+    padding: 10px;
+    font-size: 12px;
+}
+
+.creadets, a {
+    color: ivory;
+}
+
+.textSideForms {
+    border: 1px solid blue;
+    flex: 2;
+}
