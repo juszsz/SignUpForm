@@ -22,9 +22,28 @@
     --bg-color-right: whitesmoke;
 
     /* Right side padding for each container */
-    --container-padding: 10px 120px 25px 40px;
+    --container-padding: 20px 150px 25px 40px;
 
-    --right-side-font-size-bg: 25px;
+    --right-side-font-size-bg: 24px;
+
+    /* Style for inputs */
+    --input-width: 255px;
+    --input-height: 35px;
+    --input-border-radius: 8px;
+    --input-border: 1px solid rgba(0, 0, 0, 0.225);
+    --input-padding: 6px 10px;
+    --input-font-size: 13px;
+    --input-letter-spacing: 1px;
+    --input-font-weight: 600;
+    --input-font-family: inherit;
+    --input-transition: 300ms;
+
+    /* For input focus */
+    --input-outline: 1px solid rgba(0, 0, 255, 0.824);
+    --input-box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.412);
+
+    /* For outline pass */
+    --pass-outline: 1px solid red;
 }
 
 body {
@@ -84,12 +103,20 @@ main {
     justify-content: center;
 }
 
+/* form {
+    flex: var(--flex-size-lg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+} */
+
 .quoteCon {
     background-color: var(--bg-color-right);
     padding: var(--container-padding);
     font-size: var(--right-side-font-size-bg);
     display: flex;
     flex-direction: column;
+    flex: var(--flex-size-sm);
     gap: 20px;
 }
 
@@ -98,9 +125,52 @@ main {
     font-size: var(--right-side-font-size-bg);
     display: flex;
     flex-direction: column;
+    flex: var(--flex-size-sm);
+    gap: 15px;
+}
+
+.labelInputCon {
+    display: flex;
+    gap: 15%;
+}
+
+label {
+    font-size: 12px;
+    font-weight:bolder;
+    letter-spacing: var(--letter-space);
+}
+
+input {
+    width: var(--input-width);
+    height: var(--input-height);
+    border-radius: var(--input-border-radius);
+    border: var(--input-border);
+    padding: var(--input-padding);
+    font-size: var(--input-font-size);
+    letter-spacing: var(--input-letter-spacing);
+    font-weight: var(--input-font-weight);
+    font-family: var(--input-font-family);
+    transition: var(--input-transition);
+}
+
+input:focus {
+    outline: var(--input-outline);
+    box-shadow: var(--input-box-shadow);
+}
+
+.pass:user-invalid {
+    outline: var(--pass-outline);
+}
+
+.con {
+    display: flex;
+    flex-direction: column;
 }
 
 .aditional {
     background-color: var(--bg-color-right);
     padding: var(--container-padding);
+    display: flex;
+    flex-direction: column;
+    flex: var(--flex-size-sm);
 }
