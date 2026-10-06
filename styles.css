@@ -18,8 +18,13 @@
     --logo-height: 125px;
     --logo-width: auto;
 
-    /* Left right backgorund color */
+    /* Right backgorund color */
     --bg-color-right: whitesmoke;
+
+    /* Right side padding for each container */
+    --container-padding: 10px 120px 25px 40px;
+
+    --right-side-font-size-bg: 25px;
 }
 
 body {
@@ -76,8 +81,26 @@ main {
     flex: var(--flex-size-lg);
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
 
 .quoteCon {
     background-color: var(--bg-color-right);
+    padding: var(--container-padding);
+    font-size: var(--right-side-font-size-bg);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.formInfo {
+    padding: var(--container-padding);
+    font-size: var(--right-side-font-size-bg);
+    display: flex;
+    flex-direction: column;
+}
+
+.aditional {
+    background-color: var(--bg-color-right);
+    padding: var(--container-padding);
 }
