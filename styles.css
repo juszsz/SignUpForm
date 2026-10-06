@@ -4,8 +4,26 @@
     box-sizing: border-box;
 }
 
+:root {
+    --semi-trans-bg: rgba(0, 0, 0, 0.55);
+    --backgorund-image: url("images/halie.jpg");
+    --font-color: ivory;
+    --font-familia: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    --flex-size-sm: 1;
+    --flex-size-lg: 2;
+    --letter-space: 2px;
+    --credits-font-size: 10px;
+
+    /* Logo size */
+    --logo-height: 125px;
+    --logo-width: auto;
+
+    /* Left right backgorund color */
+    --bg-color-right: whitesmoke;
+}
+
 body {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: var(--font-familia);
 }
 
 main {
@@ -14,10 +32,10 @@ main {
 }
 
 .imageSideLogo {
-    background-image: url("images/halie.jpg");
+    background-image: var(--backgorund-image);
     background-size: cover;
-    color: ivory;
-    flex: 1;
+    color: var(--font-color);
+    flex: var(--flex-size-sm);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -28,31 +46,38 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgba(0, 0, 0, 0.55);
+    background-color: var(--semi-trans-bg);
     margin-top: 32%;
+    padding: 15px;
 }
 
 .logo {
-    height: 125px;
-    width: auto;
+    height: var(--logo-height);
+    width: var(--logo-width);
 }
 
 .logoName {
     font-size: 5rem;
-    letter-spacing: 2px;
+    letter-spacing: var(--letter-space);
 }
 
 .credits {
-    background-color: rgba(0, 0, 0, 0.243);
-    padding: 10px;
-    font-size: 12px;
+    background-color: var(--semi-trans-bg);
+    padding: 7px;
+    font-size: var(--credits-font-size);
 }
 
 .creadets, a {
-    color: ivory;
+    color: var(--font-color);
+    letter-spacing: var(--letter-space);
 }
 
 .textSideForms {
-    border: 1px solid blue;
-    flex: 2;
+    flex: var(--flex-size-lg);
+    display: flex;
+    flex-direction: column;
+}
+
+.quoteCon {
+    background-color: var(--bg-color-right);
 }
