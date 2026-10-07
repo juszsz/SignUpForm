@@ -100,15 +100,15 @@ main {
     flex: var(--flex-size-lg);
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    border: 1px solid red;
 }
 
-/* form {
+form {
     flex: var(--flex-size-lg);
+    border: 1px solid blue;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-} */
+}
 
 .quoteCon {
     background-color: var(--bg-color-right);
