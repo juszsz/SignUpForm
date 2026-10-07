@@ -89,11 +89,11 @@ main {
     background-color: var(--semi-trans-bg);
     padding: 7px;
     font-size: var(--credits-font-size);
+    letter-spacing: var(--letter-space);
 }
 
-.creadets, a {
+.credits a {
     color: var(--font-color);
-    letter-spacing: var(--letter-space);
 }
 
 .textSideForms {
@@ -116,7 +116,8 @@ form {
     font-size: var(--right-side-font-size-bg);
     display: flex;
     flex-direction: column;
-    flex: var(--flex-size-sm);
+    justify-content: flex-end;
+    flex: var(--flex-size-lg);
     gap: 20px;
 }
 
