@@ -44,6 +44,16 @@
 
     /* For outline pass */
     --pass-outline: 1px solid red;
+
+    /* Style for Create Account button */
+    --btn-background-color: #596D48;
+    --btn-border: none;
+    --btn-border-radius: 6px;
+    --btn-color: ivory;
+    --btn-font-weight: 800;
+    --btn-font-family: inherit;
+    --btn-font-size: 15px;
+    --btn-padding: 12px 55px;
 }
 
 body {
@@ -173,5 +183,23 @@ input:focus {
     padding: var(--container-padding);
     display: flex;
     flex-direction: column;
+    align-items: start;
     flex: var(--flex-size-sm);
+    gap: 20px;
+}
+
+.createBtn {
+    background-color: var(--btn-background-color);
+    border: var(--btn-border);
+    border-radius: var(--btn-border-radius);
+    color: var(--btn-color);
+    font-weight: var(--btn-font-weight);
+    font-family: var(--btn-font-family);
+    font-size: var(--btn-font-size);
+    padding: var(--btn-padding);
+}
+
+.aditional p a {
+    color: #596D48;
+    text-decoration: none;
 }
